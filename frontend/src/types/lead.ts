@@ -1,0 +1,21 @@
+export type Lead = {
+  id: number;
+  bot: number;
+  icp: number | null;
+  prompt_template: number | null;
+  telegram_chat_id: string;
+  telegram_message_id: string;
+  raw_text: string;
+  decision: "qualified" | "not_qualified" | "uncertain" | "failed";
+  reason: string;
+  confidence: string | null;
+  extracted_data: Record<string, unknown>;
+  llm_provider: string;
+  llm_model: string;
+  input_tokens: number;
+  output_tokens: number;
+  estimated_cost: string | null;
+  sheet_status: "pending" | "success" | "failed" | "skipped";
+  sheet_url: string;
+  created_at: string;
+};

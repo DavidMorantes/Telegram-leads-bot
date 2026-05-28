@@ -1,0 +1,18 @@
+Django==5.1.9
+djangorestframework==3.15.2
+django-cors-headers==4.4.0
+django-environ==0.11.2
+psycopg[binary]==3.2.1
+celery==5.4.0
+redis==5.0.8
+gunicorn==23.0.0
+requests==2.32.3
+djangorestframework-simplejwt==5.3.1
+google-auth==2.35.0
+
+# Quality
+ruff==0.5.7
+
+# Testing
+pytest==8.3.2
+pytest-django==4.8.0
